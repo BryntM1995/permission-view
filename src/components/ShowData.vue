@@ -2,7 +2,7 @@
   <div>
     <section>
       <h4>Permission List</h4>
-      <h4 v-show="allData.length === 0" class="mt-2">There is not data to display</h4>
+      <h4 v-show="allData.length === 0" class="mt-2">No Available Data to Display</h4>
       <!-- Button trigger modal -->
       <button @click="setEmptyValues" type="button" class="btn btn-primary m-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Request a Permission
@@ -136,7 +136,7 @@ import moment from 'moment';
 import Swal from 'sweetalert2';
 import { mapState, mapActions } from 'vuex';
 export default {
-  name: 'HelloWorld',
+  name: 'ShowData',
   props: {
   },
   filters: {
